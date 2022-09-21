@@ -1,0 +1,21 @@
+{{#if username}}
+<h2>Wazzup my guy, {{username}}</h2>
+{{else}}
+<h2>My new friend</h2>
+{{/if}}
+<h2>{{message}}</h2>
+{{#with product}}
+<div>
+    <p>Name: {{name}}</p>
+    <p>Price: {{price}}</p>
+    <p>Color: {{color}}</p>
+</div>
+{{/with}}
+
+<ul>
+    {{#each contacts}}
+    <li>{{name}}: {{email}}</li>
+    {{else}}
+    <p>I've no friends yet :(</p>
+    {{/each}}    
+</ul>
